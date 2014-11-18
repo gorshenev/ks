@@ -1,5 +1,6 @@
 $(document).ready ->
   currentLangCode = 'ru';
+
   $('#calendar').fullCalendar
 
     editable: true,
@@ -21,6 +22,7 @@ $(document).ready ->
       url: '/events',
     }],
 
+
     timeFormat: 'h:mm t{ - h:mm t} ',
     dragOpacity: "0.5"
 
@@ -38,3 +40,4 @@ updateEvent = (the_event) ->
       starts_at: "" + the_event.start,
       ends_at: "" + the_event.end,
       description: the_event.description
+

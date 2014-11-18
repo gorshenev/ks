@@ -1065,3 +1065,35 @@
 [11/18/14 19:35:59 +0300 Air-Alex.Dlink (22153)] INFO : Installing Rails 4 Error instrumentation
 [11/18/14 19:35:59 +0300 Air-Alex.Dlink (22153)] INFO : Finished instrumentation
 [11/18/14 19:36:00 +0300 Air-Alex.Dlink (22153)] INFO : Doing deferred dependency-detection before Rack startup
+[11/18/14 22:12:44 +0300 Air-Alex.Dlink (22153)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: Missing :action key on routes definition, please check your routes.
+[11/18/14 22:49:47 +0300 Air-Alex.Dlink (22153)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: /Users/alex/Desktop/ks/config/routes.rb:44: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+  match '/calendar', to: 'calendar#index'         via: 'get'
+                                                     ^
+[11/18/14 22:51:27 +0300 Air-Alex.Dlink (22153)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: /Users/alex/Desktop/ks/config/routes.rb:100: syntax error, unexpected keyword_end
+[11/18/14 22:51:34 +0300 Air-Alex.Dlink (22153)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: You should not use the `match` method in your router without specifying an HTTP method.
+If you want to expose your action to both GET and POST, add `via: [:get, :post]` option.
+If you want to expose your action to GET, use `get` in the router:
+  Instead of: match "controller#action"
+  Do: get "controller#action"
+[11/18/14 22:58:54 +0300 Air-Alex.Dlink (22153)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: undefined method `name' for nil:NilClass
+[11/18/14 22:58:54 +0300 Air-Alex.Dlink (22153)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: undefined method `name' for nil:NilClass
+[11/18/14 22:58:54 +0300 Air-Alex.Dlink (22153)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: undefined method `name' for nil:NilClass
+[11/18/14 23:01:21 +0300 Air-Alex.Dlink (22153)] WARN : The error reporting queue has reached 20. The error detail for this and subsequent errors will not be transmitted to New Relic until the queued errors have been sent: Couldn't find News with id=favicon
+[11/18/14 23:19:33 +0300 Air-Alex.Dlink (25501)] INFO : Starting the New Relic agent in "development" environment.
+[11/18/14 23:19:33 +0300 Air-Alex.Dlink (25501)] INFO : To prevent agent startup add a NEWRELIC_AGENT_ENABLED=false environment variable or modify the "development" section of your newrelic.yml.
+[11/18/14 23:19:33 +0300 Air-Alex.Dlink (25501)] INFO : Reading configuration from config/newrelic.yml (/Users/alex/Desktop/ks)
+[11/18/14 23:19:33 +0300 Air-Alex.Dlink (25501)] INFO : New Relic Agent Developer Mode enabled.
+[11/18/14 23:19:33 +0300 Air-Alex.Dlink (25501)] INFO : Environment: development
+[11/18/14 23:19:33 +0300 Air-Alex.Dlink (25501)] INFO : Dispatcher: webrick
+[11/18/14 23:19:33 +0300 Air-Alex.Dlink (25501)] INFO : Application: My Application
+[11/18/14 23:19:33 +0300 Air-Alex.Dlink (25501)] WARN : Agent configured not to send data in this environment.
+[11/18/14 23:19:33 +0300 Air-Alex.Dlink (25501)] INFO : Installing ActiveRecord 4 instrumentation
+[11/18/14 23:19:33 +0300 Air-Alex.Dlink (25501)] INFO : Installing Net instrumentation
+[11/18/14 23:19:33 +0300 Air-Alex.Dlink (25501)] INFO : Installing deferred Rack instrumentation
+[11/18/14 23:19:33 +0300 Air-Alex.Dlink (25501)] INFO : Installing Rack::Builder middleware instrumentation
+[11/18/14 23:19:33 +0300 Air-Alex.Dlink (25501)] INFO : Installing Rails 3+ middleware instrumentation
+[11/18/14 23:19:33 +0300 Air-Alex.Dlink (25501)] INFO : Installing Rails 4 Controller instrumentation
+[11/18/14 23:19:33 +0300 Air-Alex.Dlink (25501)] INFO : Installing Rails 4 view instrumentation
+[11/18/14 23:19:33 +0300 Air-Alex.Dlink (25501)] INFO : Installing Rails 4 Error instrumentation
+[11/18/14 23:19:33 +0300 Air-Alex.Dlink (25501)] INFO : Finished instrumentation
+[11/18/14 23:19:33 +0300 Air-Alex.Dlink (25501)] INFO : Doing deferred dependency-detection before Rack startup

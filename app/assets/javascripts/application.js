@@ -10,7 +10,7 @@
 // Read Sprockets README (https://github.com/sstephenson/sprockets#sprockets-directives) for details
 // about supported directives.
 //
-
+//= require fullcalendar
 //= require turbolinks
 
 //= require moment
@@ -25,6 +25,6 @@
 
 
 //= require jquery.rest
-//= require fullcalendar
+
 //= require_tree .
 

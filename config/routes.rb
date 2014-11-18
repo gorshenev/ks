@@ -40,6 +40,7 @@ PrivateEvents::Application.routes.draw do
   get '/partners', to: 'static_pages#partners'
   get '/eventspast', to: 'events#index'
   get '/contact', to: 'static_pages#contact'
+
   get '/calendar', to: 'calendar#index'
 
   # The priority is based upon order of creation: first created -> highest priority.
