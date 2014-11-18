@@ -1,0 +1,27 @@
+<h1>Новости</h1>
+
+<div class="row">
+  <div class="col-lg-8">
+
+    <% @news.each do |news| %>
+      
+  	
+  												
+		<%= news.date %><br>
+    <h2>  <b>  <%= news.title %></b></h2><br>
+		<%= truncate(news.description, :length => 250) %><br>
+     <!--   <%= news.description %><br>-->
+	 <button type="submit" class="btn btn-default"><%= link_to 'Полностью', news %></button>
+        
+        <%= link_to 'Править', edit_news_path(news) %>
+       <%= link_to 'Удалить', news, method: :delete, data: { confirm: 'Вы уверены?' } %><br>
+	   
+ 
+      
+    <% end %>
+ </div>
+<br>
+
+<%= link_to 'New News', new_news_path %>
+
+</div>

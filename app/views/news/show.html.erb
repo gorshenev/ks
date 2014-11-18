@@ -1,0 +1,17 @@
+<h1>Новости</h1>
+<p id="notice"><%= notice %></p>
+
+<p>
+  
+  <h2><b><%= @news.title %></b></h2>
+</p>
+
+<div class="row">
+  <div class="col-md-8"><%= @news.description %></div>
+  <div class="col-md-4">2346</div>
+</div>
+
+
+
+<%= link_to 'Править', edit_news_path(@news) %> |
+<%= link_to 'Назад', news_index_path %>

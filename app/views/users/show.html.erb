@@ -1,0 +1,28 @@
+
+<h1><%= @user.name %>
+<small><%= @user.email %></small></h1>
+
+<% if current_user?(@user) %>
+<div class="text-center">
+<%= link_to "Create New Event", new_event_path, class: "btn btn-success" %> 
+</div>
+<% end %>
+
+
+<% if @upcoming_events.any? %>
+<h2>Upcoming</h2>
+<%= render 'shared/table', object: @upcoming_events %>
+<% end %>
+
+<% if @previous_events.any? %>
+
+<h2>Attended</h2>
+<%= render 'shared/table', object: @previous_events %>
+
+<% end %>
+
+<% if @user.events.any? %>
+<h2>Created by <%= @user.name%></h2>
+
+<%= render 'shared/table', object: @user.events %>
+<% end %>

@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Karl Stortz - endoscope Учебный центр</title>
+  <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
+  <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
+  <%= csrf_meta_tags %>
+  <!-- bootstrap -->
+  <link href="/assets/stylesheets/bootstrap/bootstrap.min.css" rel="stylesheet" />
+  <link href="/assets/stylesheets/libs/font-awesome.css"  rel="stylesheet" />
+  <!-- libraries -->
+  <!-- <link href="css/libs/jquery-ui-1.10.2.custom.css" rel="stylesheet" type="text/css" /> -->
+  <link href="/assets/stylesheets/libs/font-awesome.css" type="text/css" rel="stylesheet" />
+  <link href="/assets/stylesheets/libs/nanoscroller.css" type="text/css" rel="stylesheet" />
+
+
+  <!-- global styles -->
+  <link rel="stylesheet"  href="/assets/stylesheets/compiled/layout.css">
+  <link rel="stylesheet" type="text/css" href="/assets/stylesheets/compiled/skin-blue.css">
+  <link rel="stylesheet" type="text/css" href="/assets/stylesheets/compiled/elements.css">
+
+
+  <!--this page specific styles -->
+  <link rel="stylesheet" href="/assets/stylesheets/libs/fullcalendar.css" type="text/css" />
+  <link rel="stylesheet" href="/assets/stylesheets/libs/fullcalendar.print.css" type="text/css" media="print" />
+  <link rel="stylesheet" href="/assets/stylesheets/compiled/calendar.css" type="text/css" media="screen" />
+  <link rel="stylesheet" href="/assets/stylesheets/libs/morris.css" type="text/css" />
+  <link rel="stylesheet" href="/assets/stylesheets/libs/daterangepicker.css" type="text/css" />
+  <link rel="stylesheet" href="/assets/stylesheets/libs/jquery-jvectormap-1.2.2.css" type="text/css" />
+
+  <!-- Favicon -->
+  <link type="image/x-icon" href="favicon.png" rel="shortcut icon"/>
+
+  <!-- google font libraries -->
+  <link href='//fonts.googleapis.com/css?family=Open+Sans:400,600,700,300|Titillium+Web:200,300,400&subset=latin,cyrillic-ext' rel='stylesheet' type='text/css'>
+
+
+
+  <!--[if lt IE 9]>
+  <script src="javascripts/html5shiv.js"></script>
+  <script src="javascripts/respond.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+
+<header class="navbar" id="header-navbar">
+  <div class="container">
+    <a href="/" id="logo" class="navbar-brand">
+      <img src="img/Logo_STORZ.png" alt="" class="normal-logo logo-white"/>
+      <img src="img/Logo_STORZ.png" alt="" class="normal-logo logo-black"/>
+      <img src="img/Logo_STORZ.png" alt="" class="small-logo hidden-xs hidden-sm hidden"/>
+    </a>
+
+    <div class="clearfix">
+      <button class="navbar-toggle" data-target=".navbar-ex1-collapse" data-toggle="collapse" type="button">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="fa fa-bars"></span>
+      </button>
+
+      <div class="nav-no-collapse navbar-left pull-left hidden-sm hidden-xs">
+        <ul class="nav navbar-nav pull-left">
+          <li>
+            <a class="btn" id="make-small-nav">
+              <i class="fa fa-bars"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="nav-no-collapse pull-right" id="header-nav">
+        <ul class="nav navbar-nav pull-right">
+          <li class="mobile-search">
+            <a class="btn">
+              <i class="fa fa-search"></i>
+            </a>
+
+            <div class="drowdown-search">
+              <form role="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" placeholder="Поиск...">
+                  <i class="fa fa-search nav-search-icon"></i>
+                </div>
+              </form>
+            </div>
+
+          </li>
+
+          <li class="dropdown profile-dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+              <% if signed_in? %>
+
+
+
+              <span class="hidden-xs"><%=  "#{current_user.name}" %></span> <b class="caret"></b>
+            </a>
+                  <% else %>
+                  <li><%= link_to "Войти", signin_path %></li>
+          <% end %>
+            <ul class="dropdown-menu">
+              <li><a href="#"><i class="fa fa-user"></i>Профиль</a></li>
+              <li><a href="#"><i class="fa fa-cog"></i>Настройки</a></li>
+              <li><a href="#"><i class="fa fa-envelope-o"></i>Мои курсы</a></li>
+              <li><a data-method="delete" href="/signout"><i class="fa fa-power-off"></i>Выйти</a></li>
+            </ul>
+          </li>
+          <li class="hidden-xxs">
+            <a class="btn" data-method="delete" href="/signout" rel="nofollow">
+              <i class="fa fa-power-off"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</header>
+<div id="page-wrapper" class="container">
+  <div class="row">
+    <div id="nav-col">
+      <section id="col-left" class="col-left-nano">
+        <div id="col-left-inner" class="col-left-nano-content">
+          <!--	<div id="user-left-box" class="clearfix hidden-sm hidden-xs">
+                                      <img alt="" src="img/samples/scarlet-159.png" />
+                                      <div class="user-box">
+                                          <span class="name">
+                                  <center>			Здравствуйте!<br/>
+                                          <h5>Сергей Владимирович </h5> </center>
+                                          </span>
+                                          <span class="status">
+                                              <i class="fa fa-circle"></i> Online
+                                          </span>
+                                      </div>-->
+        </div>
+        <div class="collapse navbar-collapse navbar-ex1-collapse" id="sidebar-nav">
+          <ul class="nav nav-pills nav-stacked">
+            <!--	<li class="active">-->
+            <li>
+
+              <a href="/trainingcenter"  class="dropdown-toggle">
+                <i class="fa fa-institution"></i>
+                <span>Учебный центр</span>
+                <i class="fa fa-chevron-circle-right drop-icon"></i>
+              </a>
+
+              <ul class="submenu">
+                <li>
+                  <a href="/about">
+                    Об учебном центре
+                  </a>
+                </li>
+                <li>
+                  <a href="/equipment">
+                    Оснащение
+                  </a>
+                </li>
+                <li>
+                  <a href="/formlearn">
+                    Формы обучения
+                  </a>
+                </li>
+                <li>
+                  <a href="/courses">
+                    Курсы и специализации
+                  </a>
+                </li>
+                <li>
+                  <a href="/sanktpeterburg">
+                    Санкт-Петербург
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li><!--<%= link_to 'Мой кабинет', current_user%>-->
+              <a href="/users">
+                <i class="fa fa-male"></i>
+                <span>Мой кабинет</span>
+              </a>
+            </li>
+            <li>
+              <a href="/events">
+                <i class="fa fa-calendar"></i>
+                <span>Календарь</span>
+              </a>
+            </li>
+            <li>
+              <a href="/eventspast">
+                <i class="fa fa-star"></i>
+                <span>Проведенные мероприятия</span>
+              </a>
+            </li>
+            <li>
+              <a href="http://217.112.36.23/endovideo/index.php" target="_blank">
+                <i class="fa fa-paper-plane"></i>
+                <span>ENDOVIDEO</span>
+              </a>
+            </li>
+            <li>
+              <a href="/articles">
+                <i class="fa fa-bullhorn"></i>
+                <span>О нас в СМИ</span>
+              </a>
+            </li>
+            <li>
+              <a href="/partners">
+                <i class="fa fa-suitcase"></i>
+                <span>Партнёры</span>
+              </a>
+            </li>
+
+            <li>
+              <a href="/news">
+                <i class="fa fa-rss-square"></i>
+                <span>Новости</span>
+              </a>
+            </li>
+
+            <li>
+              <a href="/contact">
+                <i class="fa fa-info-circle"></i>
+                <span>Контакты</span>
+              </a>
+            </li>
+
+          </ul>
+        </div>
+
+
+      </section>
+    </div>
+
+    <div id="content-wrapper">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="row">
+            <!--		<div class="col-lg-12">
+                        <ol class="breadcrumb">
+                            <li><a href="#">Учебный центр</a></li>
+                            <li class="active"><span>Главная</span></li>
+                        </ol>
+
+                <center>		<h1>Добро пожаловать</h1> </center>
+                    </div>
+                </div>-->
+
+
+            <!--	<div class="row">
+                    <div class="col-lg-8 col-sm-6 col-xs-12">
+                        <div class="main-box infographic-box">
+                            <i class="fa fa-eye gray-bg"></i>
+                            <span class="headline">Пройденно курсов</span>
+                            <span class="value">3</span>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-sm-6 col-xs-12">
+                        <div class="main-box infographic-box">
+                            <i class="fa fa-user red-bg"></i>
+                            <span class="headline">Курсов для Вас</span>
+                            <span class="value">17</span>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6 col-xs-12">
+                        <div class="main-box infographic-box">
+                            <i class="fa fa-mortar-board emerald-bg"></i>
+                            <span class="headline">Курсы для Вас</span>
+                            <span class="value">17</span>
+                        </div>
+                    </div>-->
+
+
+          </div>
+          <div class="main-box">
+
+            <div class="container">
+
+
+
+
+
+              <div class="row">
+
+
+                <%= yield %>
+
+                <p class="notice"><%= notice %></p>
+                <p class="alert"><%= alert %></p>
+
+
+
+
+
+              </div>
+
+
+
+
+            </div>
+
+
+
+
+
+
+
+            <!--	    <div class="col-md-4 col-sm-6 col-xs-12 hidden-sm">
+
+                    <div class="main-box clearfix">
+                    <header class="main-box-header clearfix">
+                     <center> <h2>Новости</h2></center>
+                    </header>
+                    <div class="main-box-body clearfix">
+                    <div class="well">
+        <u>	<center>	11.08.2014  </center><br>
+        12 декабря 2014 г.,	Учебный центр KARL STORZ в г. Санкт-Петербург, Курс для операционнных сестер по эндоскопической хирургии.</u>
+
+
+            </div>
+            <div class="well">
+        <u>	<center>	11.08.2014</center><br>
+14 нобря 2014 г., Учебный центр KARL STORZ в г. Санкт-Петербург, Курс для операционнных сестер по эндоскопической хирургии</u>
+            </div>
+            <div class="well">
+        <u>	<center>	11.08.2014</center><br>
+10 октября 2014 г., Учебный центр KARL STORZ в г. Санкт-Петербург, Курс для операционнных сестер по эндоскопической хирургии</u>
+            </div>
+                    <center>          <button type="button" class="btn btn-primary btn-lg">
+                                            <span class="fa fa-bullhorn"></span> Все новости
+                                        </button></center>
+                    </div>
+                    </div>
+                    </div>-->
+          </div>
+
+
+
+
+
+        </div>
+      </div>
+
+      <footer id="footer-bar" class="row">
+        <p id="footer-copyright" class="col-xs-12">
+          &copy; 2014 <a href="#" target="_blank">Karl Strotz</a>. Powered by VistaComputers.
+        </p>
+      </footer>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+</div>
+
+<!-- global scripts -->
+<script src="javascripts/demo-skin-changer.js"></script> <!-- only for demo -->
+
+<script src="javascripts/jquery.js"></script>
+<script src="javascripts/bootstrap.js"></script>
+<script src="javascripts/jquery.nanoscroller.min.js"></script>
+
+<script src="javascripts/demo.js"></script> <!-- only for demo -->
+
+<!-- this page specific scripts -->
+<script src="javascripts/jquery-ui.custom.min.js"></script>
+<script src="javascripts/fullcalendar.js"></script>
+<script src="javascripts/application.js"></script>
+<script src="javascripts/fullcalendar.min.js"></script>
+<script src="javascripts/jquery.slimscroll.min.js"></script>
+<script src="javascripts/raphael-min.js"></script>
+<script src="javascripts/morris.min.js"></script>
+<script src="javascripts/moment.min.js"></script>
+<script src="javascripts/daterangepicker.js"></script>
+<script src="javascripts/jquery-jvectormap-1.2.2.min.js"></script>
+<script src="javascripts/jquery-jvectormap-world-merc-en.js"></script>
+<script src="javascripts/gdp-data.js"></script>
+<script src="javascripts/flot/jquery.flot.js"></script>
+<script src="javascripts/flot/jquery.flot.min.js"></script>
+<script src="javascripts/flot/jquery.flot.pie.min.js"></script>
+<script src="javascripts/flot/jquery.flot.stack.min.js"></script>
+<script src="javascripts/flot/jquery.flot.resize.min.js"></script>
+<script src="javascripts/flot/jquery.flot.time.min.js"></script>
+<script src="javascripts/flot/jquery.flot.threshold.js"></script>
+
+
+<!-- theme scripts -->
+<script src="javascripts/scripts.js"></script>
+
+
+
+
+
+
+</body>
+</html>

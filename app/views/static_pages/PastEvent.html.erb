@@ -1,0 +1,5 @@
+<h1>StaticPages#PastEvent</h1>
+<p>Find me in app/views/static_pages/PastEvent.html.erb</p>
+<h2>Past</h2>
+<%= render 'shared/table_past', object: @events_past %>
+<%= will_paginate @events_past, :param_name => "past" %>
