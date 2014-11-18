@@ -19,6 +19,7 @@ PrivateEvents::Application.routes.draw do
   resources :invites, only: [:create, :destroy]
 
   resources :news
+  resources :posts
 
   get '/trainingcenter', to: 'static_pages#trainingcenter'
 
@@ -35,6 +36,7 @@ PrivateEvents::Application.routes.draw do
 
   get '/partners', to: 'static_pages#partners'
   get '/eventspast', to: 'events#index'
+  get '/contact', to: 'static_pages#contact'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

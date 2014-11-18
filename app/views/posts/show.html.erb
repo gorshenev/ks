@@ -1,0 +1,7 @@
+<h1 class="post_title"><%= @post.title %></h1>
+
+<div class="post_body">
+	<%= @post.body.html_safe %>
+</div>
+
+<%= link_to 'Back', posts_path %>

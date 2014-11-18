@@ -1,0 +1,27 @@
+<%= form_for(@post) do |f| %>
+	<div class="field">
+		<%= f.label :title %>
+		<%= f.text_field :title %>
+	</div>
+	<div class="field">
+  	<%= f.label :body %>
+    <%= f.text_area :raw_markdown %>
+    <div style="display:none;">
+    	<input type="text" name="post[body]" id="post_body">
+    </div>
+   </div>
+	<div class="actions">
+		<%= f.submit %>
+	</div>
+	<br><p>Live Preview</p><br>
+	<div id="body-preview"></div>
+<% end %>
+
+<script type="text/javascript">
+  setup_wmd({
+    input: 	 "post_raw_markdown",
+    preview: "body-preview",
+    output:  "post_body"
+  });
+</script>
+

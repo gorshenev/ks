@@ -75,3 +75,5 @@ gem 'jquery-ui-rails'
 gem 'jquery-rest-rails'
 
 gem 'font-awesome-sass'
+
+gem 'wmd-rails'

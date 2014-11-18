@@ -1,4 +1,5 @@
 $(document).ready ->
+  currentLangCode = 'ru';
   $('#calendar').fullCalendar
     editable: true,
     header:

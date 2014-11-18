@@ -9,6 +9,7 @@
  * compiled file, but it's generally better to create a new file per style scope.
  *
  *= require_self
+ *= require 'wmd/wmd'
  *= require fullcalendar
  *= require_tree .
  *= require rails_bootstrap_forms
