@@ -5,6 +5,9 @@ PrivateEvents::Application.routes.draw do
   root to: 'static_pages#trainingcenter'
   match '/about', to: 'static_pages#about',     via: 'get'
 
+  match '/contacts',     to: 'contacts#new',             via: 'get'
+  resources "contacts", only: [:new, :create]
+
   resources :news
   resources :users, only: [:new, :create, :show, :index]
   match '/signup',  to: 'users#new',            via: 'get'
@@ -37,6 +40,7 @@ PrivateEvents::Application.routes.draw do
   get '/partners', to: 'static_pages#partners'
   get '/eventspast', to: 'events#index'
   get '/contact', to: 'static_pages#contact'
+  get '/calendar', to: 'calendar#index'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

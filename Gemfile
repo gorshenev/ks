@@ -77,3 +77,6 @@ gem 'jquery-rest-rails'
 gem 'font-awesome-sass'
 
 gem 'wmd-rails'
+
+gem 'mail_form'
+gem 'simple_form'
