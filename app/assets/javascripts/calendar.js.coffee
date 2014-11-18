@@ -1,13 +1,20 @@
 $(document).ready ->
   currentLangCode = 'ru';
   $('#calendar').fullCalendar
+
     editable: true,
     header:
       left: 'prev,next today',
       center: 'title',
       right: 'month,agendaWeek,agendaDay'
     defaultView: 'month',
-    height: 500,
+    defaultButtonText: {today:"Сегодня",month:"Месяц",week:"Неделя",day:"День",list:"Повестка дня"},
+    allDayText:"Весь день",
+    datepickerLang: {currentText:"Сегодня"},
+    lang: 'ru',
+    height: 600,
+    minTime : "07:00:00",
+    maxTime: "23:00:00",
     slotMinutes: 30,
 
     eventSources: [{

@@ -1047,3 +1047,21 @@
 [11/18/14 18:18:36 +0300 Air-Alex.Dlink (5379)] INFO : Installing Rails 4 Error instrumentation
 [11/18/14 18:18:36 +0300 Air-Alex.Dlink (5379)] INFO : Finished instrumentation
 [11/18/14 18:18:37 +0300 Air-Alex.Dlink (5379)] INFO : Doing deferred dependency-detection before Rack startup
+[11/18/14 19:35:59 +0300 Air-Alex.Dlink (22153)] INFO : Starting the New Relic agent in "development" environment.
+[11/18/14 19:35:59 +0300 Air-Alex.Dlink (22153)] INFO : To prevent agent startup add a NEWRELIC_AGENT_ENABLED=false environment variable or modify the "development" section of your newrelic.yml.
+[11/18/14 19:35:59 +0300 Air-Alex.Dlink (22153)] INFO : Reading configuration from config/newrelic.yml (/Users/alex/Desktop/ks)
+[11/18/14 19:35:59 +0300 Air-Alex.Dlink (22153)] INFO : New Relic Agent Developer Mode enabled.
+[11/18/14 19:35:59 +0300 Air-Alex.Dlink (22153)] INFO : Environment: development
+[11/18/14 19:35:59 +0300 Air-Alex.Dlink (22153)] INFO : Dispatcher: webrick
+[11/18/14 19:35:59 +0300 Air-Alex.Dlink (22153)] INFO : Application: My Application
+[11/18/14 19:35:59 +0300 Air-Alex.Dlink (22153)] WARN : Agent configured not to send data in this environment.
+[11/18/14 19:35:59 +0300 Air-Alex.Dlink (22153)] INFO : Installing ActiveRecord 4 instrumentation
+[11/18/14 19:35:59 +0300 Air-Alex.Dlink (22153)] INFO : Installing Net instrumentation
+[11/18/14 19:35:59 +0300 Air-Alex.Dlink (22153)] INFO : Installing deferred Rack instrumentation
+[11/18/14 19:35:59 +0300 Air-Alex.Dlink (22153)] INFO : Installing Rack::Builder middleware instrumentation
+[11/18/14 19:35:59 +0300 Air-Alex.Dlink (22153)] INFO : Installing Rails 3+ middleware instrumentation
+[11/18/14 19:35:59 +0300 Air-Alex.Dlink (22153)] INFO : Installing Rails 4 Controller instrumentation
+[11/18/14 19:35:59 +0300 Air-Alex.Dlink (22153)] INFO : Installing Rails 4 view instrumentation
+[11/18/14 19:35:59 +0300 Air-Alex.Dlink (22153)] INFO : Installing Rails 4 Error instrumentation
+[11/18/14 19:35:59 +0300 Air-Alex.Dlink (22153)] INFO : Finished instrumentation
+[11/18/14 19:36:00 +0300 Air-Alex.Dlink (22153)] INFO : Doing deferred dependency-detection before Rack startup
