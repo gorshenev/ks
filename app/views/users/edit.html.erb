@@ -20,6 +20,33 @@
         <%= f.label :password_confirmation, "Подтвердите пароль" %>
         <%= f.password_field :password_confirmation, class: 'form-control' %>
 
+        <%= f.label :Направление %>
+        <%= f.text_field :napravlenie, class: 'form-control' %>
+
+        <%= f.label :Дата_рождения %>
+        <%= f.date_field :birthdate, class: 'form-control' %>
+
+        <%= f.label :Телефон %>
+        <%= f.phone_field :phone, class: 'form-control' %>
+
+        <%= f.label :Компания %>
+        <%= f.text_field :company, class: 'form-control' %>
+
+        <%= f.label :Должность %>
+        <%= f.text_field :post, class: 'form-control' %>
+
+        <%= f.label :Город %>
+        <%= f.text_field :city, class: 'form-control' %>
+
+        <%= f.label :Страна %>
+        <%= f.text_field :country, class: 'form-control' %>
+
+        <%= f.label :Область %>
+        <%= f.text_field :region, class: 'form-control' %>
+
+        <%= f.label :Хотели_ли_бы_Вы_получать_дополнительную_информацию %>
+        <%= f.text_field :info, class: 'form-control' %>
+
         <%= f.submit "Сохранить изменения", class: "btn btn-primary" %>
     <% end %>
 

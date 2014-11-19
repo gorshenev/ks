@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20141118211901) do
+ActiveRecord::Schema.define(version: 20141119154328) do
 
   create_table "events", force: true do |t|
     t.string   "location"
@@ -88,10 +88,26 @@ ActiveRecord::Schema.define(version: 20141118211901) do
     t.string   "remember_token"
     t.string   "color"
     t.string   "napravlenie"
+    t.datetime "birthdate"
+    t.string   "phone"
+    t.string   "company"
+    t.string   "post"
+    t.string   "city"
+    t.string   "country"
+    t.string   "region"
+    t.string   "info"
   end
 
+  add_index "users", ["birthdate"], name: "index_users_on_birthdate"
+  add_index "users", ["city"], name: "index_users_on_city"
   add_index "users", ["color"], name: "index_users_on_color"
+  add_index "users", ["company"], name: "index_users_on_company"
+  add_index "users", ["country"], name: "index_users_on_country"
+  add_index "users", ["info"], name: "index_users_on_info"
   add_index "users", ["napravlenie"], name: "index_users_on_napravlenie"
+  add_index "users", ["phone"], name: "index_users_on_phone"
+  add_index "users", ["post"], name: "index_users_on_post"
+  add_index "users", ["region"], name: "index_users_on_region"
   add_index "users", ["remember_token"], name: "index_users_on_remember_token"
 
 end
