@@ -166,11 +166,12 @@
               </ul>
 
             </li>
-            <li><!--<%= link_to 'Мой кабинет', current_user%>-->
-              <a href="/users">
+            <li>
+              <%= link_to(@users) do %>
+
                 <i class="fa fa-male"></i>
-                <span>Мой кабинет</span>
-              </a>
+                <span><%= link_to 'Мой кабинет', current_user %></span>
+             <%  end %>
             </li>
             <li>
               <a href="/calendar">

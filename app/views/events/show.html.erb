@@ -5,14 +5,14 @@
 <div class="text-center"><%= render 'attend_form' %></div>
 <% end %>
 
-<p><b>Location: </b><%= @event.location %></p> 
-<p><b>Host: </b><%= @event.creator.name %></p>
+<p><b>Место: </b><%= @event.location %></p>
+<p><b>Отвественное лицо: </b><%= @event.creator.name %></p>
 
 <p><%= @event.description %></p>
 
 </br>
 
-<b>Who's Going:</b>
+<b>Участники:</b>
 
 <ol>
 <% @event.attendees.each do |attendee| %>

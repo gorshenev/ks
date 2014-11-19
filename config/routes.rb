@@ -9,7 +9,7 @@ PrivateEvents::Application.routes.draw do
   resources "contacts", only: [:new, :create]
 
   resources :news
-  resources :users, only: [:new, :create, :show, :index]
+  resources :users, only: [:new, :create, :edit, :update, :show, :index]
   match '/signup',  to: 'users#new',            via: 'get'
 
   resources :sessions, only: [:new, :create, :destroy]
@@ -27,7 +27,7 @@ PrivateEvents::Application.routes.draw do
   get '/trainingcenter', to: 'static_pages#trainingcenter'
 
 
-  get '/users/:id', to: 'users#show'
+  get '/users/:id' =>  'users#show'
 
   get '/equipment', to: 'static_pages#equipment'
 
@@ -50,7 +50,7 @@ PrivateEvents::Application.routes.draw do
   # root 'welcome#index'
 
   # Example of regular route:
-  #   get 'products/:id' => 'catalog#view'
+    # get 'products/:id' => 'catalog#view'
 
   # Example of named route that can be invoked with purchase_url(id: product.id)
   #   get 'products/:id/purchase' => 'catalog#purchase', as: :purchase
