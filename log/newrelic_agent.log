@@ -1450,3 +1450,39 @@ If you want to expose your action to GET, use `get` in the router:
 [11/19/14 18:59:26 +0300 Air-Alex.Dlink (56178)] INFO : Installing Rails 4 Error instrumentation
 [11/19/14 18:59:26 +0300 Air-Alex.Dlink (56178)] INFO : Finished instrumentation
 [11/19/14 18:59:27 +0300 Air-Alex.Dlink (56178)] INFO : Doing deferred dependency-detection before Rack startup
+[11/20/14 00:17:27 +0300 Air-Alex.Dlink (59426)] INFO : Starting the New Relic agent in "development" environment.
+[11/20/14 00:17:27 +0300 Air-Alex.Dlink (59426)] INFO : To prevent agent startup add a NEWRELIC_AGENT_ENABLED=false environment variable or modify the "development" section of your newrelic.yml.
+[11/20/14 00:17:27 +0300 Air-Alex.Dlink (59426)] INFO : Reading configuration from config/newrelic.yml (/Users/alex/Desktop/ks)
+[11/20/14 00:17:27 +0300 Air-Alex.Dlink (59426)] INFO : New Relic Agent Developer Mode enabled.
+[11/20/14 00:17:27 +0300 Air-Alex.Dlink (59426)] INFO : Environment: development
+[11/20/14 00:17:27 +0300 Air-Alex.Dlink (59426)] INFO : Dispatcher: webrick
+[11/20/14 00:17:27 +0300 Air-Alex.Dlink (59426)] INFO : Application: My Application
+[11/20/14 00:17:27 +0300 Air-Alex.Dlink (59426)] WARN : Agent configured not to send data in this environment.
+[11/20/14 00:17:27 +0300 Air-Alex.Dlink (59426)] INFO : Installing ActiveRecord 4 instrumentation
+[11/20/14 00:17:27 +0300 Air-Alex.Dlink (59426)] INFO : Installing Net instrumentation
+[11/20/14 00:17:27 +0300 Air-Alex.Dlink (59426)] INFO : Installing deferred Rack instrumentation
+[11/20/14 00:17:27 +0300 Air-Alex.Dlink (59426)] INFO : Installing Rack::Builder middleware instrumentation
+[11/20/14 00:17:27 +0300 Air-Alex.Dlink (59426)] INFO : Installing Rails 3+ middleware instrumentation
+[11/20/14 00:17:27 +0300 Air-Alex.Dlink (59426)] INFO : Installing Rails 4 Controller instrumentation
+[11/20/14 00:17:27 +0300 Air-Alex.Dlink (59426)] INFO : Installing Rails 4 view instrumentation
+[11/20/14 00:17:27 +0300 Air-Alex.Dlink (59426)] INFO : Installing Rails 4 Error instrumentation
+[11/20/14 00:17:27 +0300 Air-Alex.Dlink (59426)] INFO : Finished instrumentation
+[11/20/14 00:17:28 +0300 Air-Alex.Dlink (59426)] INFO : Doing deferred dependency-detection before Rack startup
+[11/20/14 08:25:59 +0300 Air-Alex.Dlink (62396)] INFO : Starting the New Relic agent in "development" environment.
+[11/20/14 08:25:59 +0300 Air-Alex.Dlink (62396)] INFO : To prevent agent startup add a NEWRELIC_AGENT_ENABLED=false environment variable or modify the "development" section of your newrelic.yml.
+[11/20/14 08:25:59 +0300 Air-Alex.Dlink (62396)] INFO : Reading configuration from config/newrelic.yml (/Users/alex/Desktop/ks)
+[11/20/14 08:25:59 +0300 Air-Alex.Dlink (62396)] INFO : New Relic Agent Developer Mode enabled.
+[11/20/14 08:25:59 +0300 Air-Alex.Dlink (62396)] INFO : Environment: development
+[11/20/14 08:25:59 +0300 Air-Alex.Dlink (62396)] INFO : Dispatcher: webrick
+[11/20/14 08:25:59 +0300 Air-Alex.Dlink (62396)] INFO : Application: My Application
+[11/20/14 08:25:59 +0300 Air-Alex.Dlink (62396)] WARN : Agent configured not to send data in this environment.
+[11/20/14 08:25:59 +0300 Air-Alex.Dlink (62396)] INFO : Installing ActiveRecord 4 instrumentation
+[11/20/14 08:25:59 +0300 Air-Alex.Dlink (62396)] INFO : Installing Net instrumentation
+[11/20/14 08:25:59 +0300 Air-Alex.Dlink (62396)] INFO : Installing deferred Rack instrumentation
+[11/20/14 08:25:59 +0300 Air-Alex.Dlink (62396)] INFO : Installing Rack::Builder middleware instrumentation
+[11/20/14 08:25:59 +0300 Air-Alex.Dlink (62396)] INFO : Installing Rails 3+ middleware instrumentation
+[11/20/14 08:25:59 +0300 Air-Alex.Dlink (62396)] INFO : Installing Rails 4 Controller instrumentation
+[11/20/14 08:25:59 +0300 Air-Alex.Dlink (62396)] INFO : Installing Rails 4 view instrumentation
+[11/20/14 08:25:59 +0300 Air-Alex.Dlink (62396)] INFO : Installing Rails 4 Error instrumentation
+[11/20/14 08:25:59 +0300 Air-Alex.Dlink (62396)] INFO : Finished instrumentation
+[11/20/14 08:26:00 +0300 Air-Alex.Dlink (62396)] INFO : Doing deferred dependency-detection before Rack startup

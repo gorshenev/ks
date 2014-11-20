@@ -4,7 +4,28 @@
 @import 'fullcalendar';
 
 .fc-event-skin {
-    background-color: #3366CC;
-    border-color: #3366CC;
+    background-color: #5bd457;
+    border-color: #5bd457;
     color: #FFFFFF;
+}
+.fc-event-tid-1,
+.fc-event-tid-1 .fc-event-skin,
+.fc-event-tid-1 .fc-event-time,
+.fc-event-tid-1 a {
+  color: #fff;
+  background-color: #ff4500;
+}
+.fc-event-tid-2,
+.fc-event-tid-2 .fc-event-skin,
+.fc-event-tid-2 .fc-event-time,
+.fc-event-tid-2 a {
+  color: #fff;
+  background-color: #87cefa;
+}
+.fc-event-tid-3,
+.fc-event-tid-3 .fc-event-skin,
+.fc-event-tid-3 .fc-event-time,
+.fc-event-tid-3 a {
+  color: #fff;
+  background-color: #32cd32;
 }

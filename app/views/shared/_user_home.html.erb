@@ -1,7 +1,7 @@
 <h1><%= @user.name %>
 <small><%= @user.email %></small></h1>
 
-<%= link_to "Create New Event", new_event_path, class: "btn btn-lg btn-success" %> 
+<%= link_to "Создать мероприятие", new_event_path, class: "btn btn-lg btn-success" %>
 
 <% if @upcoming_events.any? %>
 <h2>Будущие мероприятия:</h2>

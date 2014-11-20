@@ -17,13 +17,14 @@ $(document).ready ->
     minTime : "07:00:00",
     maxTime: "23:00:00",
     slotMinutes: 30,
+    eventColor: '#074089',
 
     eventSources: [{
       url: '/events',
     }],
 
 
-    timeFormat: 'h:mm t{ - h:mm t} ',
+    timeFormat: 'h:mm  ',
     dragOpacity: "0.5"
 
     eventDrop: (event, dayDelta, minuteDelta, allDay, revertFunc) ->
