@@ -7,7 +7,7 @@ $(document).ready ->
     header:
       left: 'prev,next today',
       center: 'title',
-      right: 'month,agendaWeek,agendaDay'
+      right: 'month,agendaWeek,agendaDay,event'
     defaultView: 'month',
     defaultButtonText: {today:"Сегодня",month:"Месяц",week:"Неделя",day:"День",list:"Повестка дня"},
     allDayText:"Весь день",

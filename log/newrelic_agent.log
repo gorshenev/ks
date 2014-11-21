@@ -1486,3 +1486,128 @@ If you want to expose your action to GET, use `get` in the router:
 [11/20/14 08:25:59 +0300 Air-Alex.Dlink (62396)] INFO : Installing Rails 4 Error instrumentation
 [11/20/14 08:25:59 +0300 Air-Alex.Dlink (62396)] INFO : Finished instrumentation
 [11/20/14 08:26:00 +0300 Air-Alex.Dlink (62396)] INFO : Doing deferred dependency-detection before Rack startup
+[11/20/14 12:33:56 +0300 MacBook-Air-Alex.local (62779)] INFO : Starting the New Relic agent in "development" environment.
+[11/20/14 12:33:56 +0300 MacBook-Air-Alex.local (62779)] INFO : To prevent agent startup add a NEWRELIC_AGENT_ENABLED=false environment variable or modify the "development" section of your newrelic.yml.
+[11/20/14 12:33:56 +0300 MacBook-Air-Alex.local (62779)] INFO : Reading configuration from config/newrelic.yml (/Users/alex/Desktop/ks)
+[11/20/14 12:33:57 +0300 MacBook-Air-Alex.local (62779)] INFO : New Relic Agent Developer Mode enabled.
+[11/20/14 12:33:57 +0300 MacBook-Air-Alex.local (62779)] INFO : Environment: development
+[11/20/14 12:33:57 +0300 MacBook-Air-Alex.local (62779)] INFO : Dispatcher: webrick
+[11/20/14 12:33:57 +0300 MacBook-Air-Alex.local (62779)] INFO : Application: My Application
+[11/20/14 12:33:57 +0300 MacBook-Air-Alex.local (62779)] WARN : Agent configured not to send data in this environment.
+[11/20/14 12:33:57 +0300 MacBook-Air-Alex.local (62779)] INFO : Installing ActiveRecord 4 instrumentation
+[11/20/14 12:33:57 +0300 MacBook-Air-Alex.local (62779)] INFO : Installing Net instrumentation
+[11/20/14 12:33:57 +0300 MacBook-Air-Alex.local (62779)] INFO : Installing deferred Rack instrumentation
+[11/20/14 12:33:57 +0300 MacBook-Air-Alex.local (62779)] INFO : Installing Rack::Builder middleware instrumentation
+[11/20/14 12:33:57 +0300 MacBook-Air-Alex.local (62779)] INFO : Installing Rails 3+ middleware instrumentation
+[11/20/14 12:33:57 +0300 MacBook-Air-Alex.local (62779)] INFO : Installing Rails 4 Controller instrumentation
+[11/20/14 12:33:57 +0300 MacBook-Air-Alex.local (62779)] INFO : Installing Rails 4 view instrumentation
+[11/20/14 12:33:57 +0300 MacBook-Air-Alex.local (62779)] INFO : Installing Rails 4 Error instrumentation
+[11/20/14 12:33:57 +0300 MacBook-Air-Alex.local (62779)] INFO : Finished instrumentation
+[11/20/14 12:33:57 +0300 MacBook-Air-Alex.local (62779)] INFO : Doing deferred dependency-detection before Rack startup
+[11/20/14 14:46:03 +0300 MacBook-Air-Alex.local (1005)] INFO : Starting the New Relic agent in "development" environment.
+[11/20/14 14:46:03 +0300 MacBook-Air-Alex.local (1005)] INFO : To prevent agent startup add a NEWRELIC_AGENT_ENABLED=false environment variable or modify the "development" section of your newrelic.yml.
+[11/20/14 14:46:03 +0300 MacBook-Air-Alex.local (1005)] INFO : Reading configuration from config/newrelic.yml (/Users/alex/Desktop/ks)
+[11/20/14 14:46:03 +0300 MacBook-Air-Alex.local (1005)] INFO : New Relic Agent Developer Mode enabled.
+[11/20/14 14:46:03 +0300 MacBook-Air-Alex.local (1005)] INFO : Environment: development
+[11/20/14 14:46:03 +0300 MacBook-Air-Alex.local (1005)] INFO : Dispatcher: webrick
+[11/20/14 14:46:03 +0300 MacBook-Air-Alex.local (1005)] INFO : Application: My Application
+[11/20/14 14:46:03 +0300 MacBook-Air-Alex.local (1005)] WARN : Agent configured not to send data in this environment.
+[11/20/14 14:46:03 +0300 MacBook-Air-Alex.local (1005)] INFO : Installing ActiveRecord 4 instrumentation
+[11/20/14 14:46:03 +0300 MacBook-Air-Alex.local (1005)] INFO : Installing Net instrumentation
+[11/20/14 14:46:03 +0300 MacBook-Air-Alex.local (1005)] INFO : Installing deferred Rack instrumentation
+[11/20/14 14:46:03 +0300 MacBook-Air-Alex.local (1005)] INFO : Installing Rack::Builder middleware instrumentation
+[11/20/14 14:46:03 +0300 MacBook-Air-Alex.local (1005)] INFO : Installing Rails 3+ middleware instrumentation
+[11/20/14 14:46:03 +0300 MacBook-Air-Alex.local (1005)] INFO : Installing Rails 4 Controller instrumentation
+[11/20/14 14:46:03 +0300 MacBook-Air-Alex.local (1005)] INFO : Installing Rails 4 view instrumentation
+[11/20/14 14:46:03 +0300 MacBook-Air-Alex.local (1005)] INFO : Installing Rails 4 Error instrumentation
+[11/20/14 14:46:03 +0300 MacBook-Air-Alex.local (1005)] INFO : Finished instrumentation
+[11/20/14 14:46:04 +0300 MacBook-Air-Alex.local (1005)] INFO : Doing deferred dependency-detection before Rack startup
+[11/21/14 14:18:11 +0300 Air-Alex.Dlink (6595)] INFO : Starting the New Relic agent in "development" environment.
+[11/21/14 14:18:11 +0300 Air-Alex.Dlink (6595)] INFO : To prevent agent startup add a NEWRELIC_AGENT_ENABLED=false environment variable or modify the "development" section of your newrelic.yml.
+[11/21/14 14:18:11 +0300 Air-Alex.Dlink (6595)] INFO : Reading configuration from config/newrelic.yml (/Users/alex/Desktop/ks)
+[11/21/14 14:18:11 +0300 Air-Alex.Dlink (6595)] INFO : New Relic Agent Developer Mode enabled.
+[11/21/14 14:18:11 +0300 Air-Alex.Dlink (6595)] INFO : Environment: development
+[11/21/14 14:18:11 +0300 Air-Alex.Dlink (6595)] INFO : Dispatcher: webrick
+[11/21/14 14:18:11 +0300 Air-Alex.Dlink (6595)] INFO : Application: My Application
+[11/21/14 14:18:11 +0300 Air-Alex.Dlink (6595)] WARN : Agent configured not to send data in this environment.
+[11/21/14 14:18:11 +0300 Air-Alex.Dlink (6595)] INFO : Installing ActiveRecord 4 instrumentation
+[11/21/14 14:18:11 +0300 Air-Alex.Dlink (6595)] INFO : Installing Net instrumentation
+[11/21/14 14:18:11 +0300 Air-Alex.Dlink (6595)] INFO : Installing deferred Rack instrumentation
+[11/21/14 14:18:11 +0300 Air-Alex.Dlink (6595)] INFO : Installing Rack::Builder middleware instrumentation
+[11/21/14 14:18:11 +0300 Air-Alex.Dlink (6595)] INFO : Installing Rails 3+ middleware instrumentation
+[11/21/14 14:18:12 +0300 Air-Alex.Dlink (6595)] INFO : Installing Rails 4 Controller instrumentation
+[11/21/14 14:18:12 +0300 Air-Alex.Dlink (6595)] INFO : Installing Rails 4 view instrumentation
+[11/21/14 14:18:12 +0300 Air-Alex.Dlink (6595)] INFO : Installing Rails 4 Error instrumentation
+[11/21/14 14:18:12 +0300 Air-Alex.Dlink (6595)] INFO : Finished instrumentation
+[11/21/14 14:18:12 +0300 Air-Alex.Dlink (6595)] INFO : Doing deferred dependency-detection before Rack startup
+[11/21/14 22:48:26 +0300 Air-Alex.Dlink (1071)] INFO : Starting the New Relic agent in "development" environment.
+[11/21/14 22:48:26 +0300 Air-Alex.Dlink (1071)] INFO : To prevent agent startup add a NEWRELIC_AGENT_ENABLED=false environment variable or modify the "development" section of your newrelic.yml.
+[11/21/14 22:48:26 +0300 Air-Alex.Dlink (1071)] INFO : Reading configuration from config/newrelic.yml (/Users/alex/Desktop/ks)
+[11/21/14 22:48:26 +0300 Air-Alex.Dlink (1071)] INFO : New Relic Agent Developer Mode enabled.
+[11/21/14 22:48:26 +0300 Air-Alex.Dlink (1071)] INFO : Environment: development
+[11/21/14 22:48:26 +0300 Air-Alex.Dlink (1071)] INFO : Dispatcher: webrick
+[11/21/14 22:48:26 +0300 Air-Alex.Dlink (1071)] INFO : Application: My Application
+[11/21/14 22:48:26 +0300 Air-Alex.Dlink (1071)] WARN : Agent configured not to send data in this environment.
+[11/21/14 22:48:26 +0300 Air-Alex.Dlink (1071)] INFO : Installing ActiveRecord 4 instrumentation
+[11/21/14 22:48:26 +0300 Air-Alex.Dlink (1071)] INFO : Installing Net instrumentation
+[11/21/14 22:48:26 +0300 Air-Alex.Dlink (1071)] INFO : Installing deferred Rack instrumentation
+[11/21/14 22:48:26 +0300 Air-Alex.Dlink (1071)] INFO : Installing Rack::Builder middleware instrumentation
+[11/21/14 22:48:26 +0300 Air-Alex.Dlink (1071)] INFO : Installing Rails 3+ middleware instrumentation
+[11/21/14 22:48:26 +0300 Air-Alex.Dlink (1071)] INFO : Installing Rails 4 Controller instrumentation
+[11/21/14 22:48:26 +0300 Air-Alex.Dlink (1071)] INFO : Installing Rails 4 view instrumentation
+[11/21/14 22:48:26 +0300 Air-Alex.Dlink (1071)] INFO : Installing Rails 4 Error instrumentation
+[11/21/14 22:48:26 +0300 Air-Alex.Dlink (1071)] INFO : Finished instrumentation
+[11/21/14 22:48:27 +0300 Air-Alex.Dlink (1071)] INFO : Doing deferred dependency-detection before Rack startup
+[11/22/14 00:36:47 +0300 Air-Alex.Dlink (1474)] INFO : Starting the New Relic agent in "development" environment.
+[11/22/14 00:36:47 +0300 Air-Alex.Dlink (1474)] INFO : To prevent agent startup add a NEWRELIC_AGENT_ENABLED=false environment variable or modify the "development" section of your newrelic.yml.
+[11/22/14 00:36:47 +0300 Air-Alex.Dlink (1474)] INFO : Reading configuration from config/newrelic.yml (/Users/alex/Desktop/ks)
+[11/22/14 00:36:47 +0300 Air-Alex.Dlink (1474)] INFO : New Relic Agent Developer Mode enabled.
+[11/22/14 00:36:47 +0300 Air-Alex.Dlink (1474)] INFO : Environment: development
+[11/22/14 00:36:47 +0300 Air-Alex.Dlink (1474)] INFO : No known dispatcher detected.
+[11/22/14 00:36:47 +0300 Air-Alex.Dlink (1474)] INFO : Application: My Application
+[11/22/14 00:36:47 +0300 Air-Alex.Dlink (1474)] WARN : Agent configured not to send data in this environment.
+[11/22/14 00:36:47 +0300 Air-Alex.Dlink (1474)] INFO : Installing ActiveRecord 4 instrumentation
+[11/22/14 00:36:47 +0300 Air-Alex.Dlink (1474)] INFO : Installing Net instrumentation
+[11/22/14 00:36:47 +0300 Air-Alex.Dlink (1474)] INFO : Installing deferred Rack instrumentation
+[11/22/14 00:36:47 +0300 Air-Alex.Dlink (1474)] INFO : Installing Rack::Builder middleware instrumentation
+[11/22/14 00:36:47 +0300 Air-Alex.Dlink (1474)] INFO : Installing Rails 3+ middleware instrumentation
+[11/22/14 00:36:47 +0300 Air-Alex.Dlink (1474)] INFO : Installing Rails 4 Controller instrumentation
+[11/22/14 00:36:47 +0300 Air-Alex.Dlink (1474)] INFO : Installing Rails 4 view instrumentation
+[11/22/14 00:36:47 +0300 Air-Alex.Dlink (1474)] INFO : Installing Rails 4 Error instrumentation
+[11/22/14 00:36:47 +0300 Air-Alex.Dlink (1474)] INFO : Finished instrumentation
+[11/22/14 00:39:22 +0300 Air-Alex.Dlink (1484)] INFO : Starting the New Relic agent in "development" environment.
+[11/22/14 00:39:22 +0300 Air-Alex.Dlink (1484)] INFO : To prevent agent startup add a NEWRELIC_AGENT_ENABLED=false environment variable or modify the "development" section of your newrelic.yml.
+[11/22/14 00:39:22 +0300 Air-Alex.Dlink (1484)] INFO : Reading configuration from config/newrelic.yml (/Users/alex/Desktop/ks)
+[11/22/14 00:39:22 +0300 Air-Alex.Dlink (1484)] INFO : New Relic Agent Developer Mode enabled.
+[11/22/14 00:39:22 +0300 Air-Alex.Dlink (1484)] INFO : Environment: development
+[11/22/14 00:39:22 +0300 Air-Alex.Dlink (1484)] INFO : Dispatcher: webrick
+[11/22/14 00:39:22 +0300 Air-Alex.Dlink (1484)] INFO : Application: My Application
+[11/22/14 00:39:22 +0300 Air-Alex.Dlink (1484)] WARN : Agent configured not to send data in this environment.
+[11/22/14 00:39:22 +0300 Air-Alex.Dlink (1484)] INFO : Installing ActiveRecord 4 instrumentation
+[11/22/14 00:39:22 +0300 Air-Alex.Dlink (1484)] INFO : Installing Net instrumentation
+[11/22/14 00:39:22 +0300 Air-Alex.Dlink (1484)] INFO : Installing deferred Rack instrumentation
+[11/22/14 00:39:22 +0300 Air-Alex.Dlink (1484)] INFO : Installing Rack::Builder middleware instrumentation
+[11/22/14 00:39:22 +0300 Air-Alex.Dlink (1484)] INFO : Installing Rails 3+ middleware instrumentation
+[11/22/14 00:39:22 +0300 Air-Alex.Dlink (1484)] INFO : Installing Rails 4 Controller instrumentation
+[11/22/14 00:39:22 +0300 Air-Alex.Dlink (1484)] INFO : Installing Rails 4 view instrumentation
+[11/22/14 00:39:22 +0300 Air-Alex.Dlink (1484)] INFO : Installing Rails 4 Error instrumentation
+[11/22/14 00:39:22 +0300 Air-Alex.Dlink (1484)] INFO : Finished instrumentation
+[11/22/14 00:39:23 +0300 Air-Alex.Dlink (1484)] INFO : Doing deferred dependency-detection before Rack startup
+[11/22/14 00:43:00 +0300 Air-Alex.Dlink (1494)] INFO : Starting the New Relic agent in "development" environment.
+[11/22/14 00:43:00 +0300 Air-Alex.Dlink (1494)] INFO : To prevent agent startup add a NEWRELIC_AGENT_ENABLED=false environment variable or modify the "development" section of your newrelic.yml.
+[11/22/14 00:43:00 +0300 Air-Alex.Dlink (1494)] INFO : Reading configuration from config/newrelic.yml (/Users/alex/Desktop/ks)
+[11/22/14 00:43:00 +0300 Air-Alex.Dlink (1494)] INFO : New Relic Agent Developer Mode enabled.
+[11/22/14 00:43:00 +0300 Air-Alex.Dlink (1494)] INFO : Environment: development
+[11/22/14 00:43:00 +0300 Air-Alex.Dlink (1494)] INFO : Dispatcher: webrick
+[11/22/14 00:43:00 +0300 Air-Alex.Dlink (1494)] INFO : Application: My Application
+[11/22/14 00:43:00 +0300 Air-Alex.Dlink (1494)] WARN : Agent configured not to send data in this environment.
+[11/22/14 00:43:00 +0300 Air-Alex.Dlink (1494)] INFO : Installing ActiveRecord 4 instrumentation
+[11/22/14 00:43:00 +0300 Air-Alex.Dlink (1494)] INFO : Installing Net instrumentation
+[11/22/14 00:43:00 +0300 Air-Alex.Dlink (1494)] INFO : Installing deferred Rack instrumentation
+[11/22/14 00:43:00 +0300 Air-Alex.Dlink (1494)] INFO : Installing Rack::Builder middleware instrumentation
+[11/22/14 00:43:00 +0300 Air-Alex.Dlink (1494)] INFO : Installing Rails 3+ middleware instrumentation
+[11/22/14 00:43:00 +0300 Air-Alex.Dlink (1494)] INFO : Installing Rails 4 Controller instrumentation
+[11/22/14 00:43:00 +0300 Air-Alex.Dlink (1494)] INFO : Installing Rails 4 view instrumentation
+[11/22/14 00:43:00 +0300 Air-Alex.Dlink (1494)] INFO : Installing Rails 4 Error instrumentation
+[11/22/14 00:43:00 +0300 Air-Alex.Dlink (1494)] INFO : Finished instrumentation
+[11/22/14 00:43:00 +0300 Air-Alex.Dlink (1494)] INFO : Doing deferred dependency-detection before Rack startup
