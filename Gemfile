@@ -80,3 +80,4 @@ gem 'wmd-rails'
 
 gem 'mail_form'
 gem 'simple_form'
+

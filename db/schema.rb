@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20141121213648) do
+ActiveRecord::Schema.define(version: 20141122172042) do
 
   create_table "events", force: true do |t|
     t.string   "location"
@@ -25,12 +25,14 @@ ActiveRecord::Schema.define(version: 20141121213648) do
     t.datetime "ends_at"
     t.boolean  "all_day"
     t.string   "color"
+    t.integer  "specialities_name"
   end
 
   add_index "events", ["all_day"], name: "index_events_on_all_day"
   add_index "events", ["color"], name: "index_events_on_color"
   add_index "events", ["creator_id"], name: "index_events_on_creator_id"
   add_index "events", ["ends_at"], name: "index_events_on_ends_at"
+  add_index "events", ["specialities_name"], name: "index_events_on_specialities_name"
   add_index "events", ["starts_at"], name: "index_events_on_starts_at"
 
   create_table "fullcalendar_engine_event_series", force: true do |t|
@@ -80,6 +82,11 @@ ActiveRecord::Schema.define(version: 20141121213648) do
     t.text     "body"
     t.datetime "created_at"
     t.datetime "updated_at"
+  end
+
+  create_table "specialities", force: true do |t|
+    t.string "name"
+    t.string "color"
   end
 
   create_table "users", force: true do |t|

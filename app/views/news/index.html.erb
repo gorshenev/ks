@@ -9,7 +9,7 @@
   												
 		<%= news.date %><br>
     <h2>  <b>  <%= news.title %></b></h2><br>
-		<%= truncate(news.description, :length => 250) %><br>
+		<%= truncate(news.description, :length => 270) %><br>
      <!--   <%= news.description %><br>-->
 	 <button type="submit" class="btn btn-default"><%= link_to 'Полностью', news %></button>
         
@@ -22,6 +22,6 @@
  </div>
 <br>
 
-<%= link_to 'New News', new_news_path %>
+<%= link_to 'Создать новость', new_news_path %>
 
 </div>

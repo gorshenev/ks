@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @speciality.name %>
+</p>
+
+<p>
+  <strong>Color:</strong>
+  <%= @speciality.color %>
+</p>
+
+<%= link_to 'Edit', edit_speciality_path(@speciality) %> |
+<%= link_to 'Back', specialities_path %>

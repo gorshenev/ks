@@ -1,5 +1,8 @@
 PrivateEvents::Application.routes.draw do
 
+
+  resources :specialities
+
   mount RailsAdmin::Engine => '//admin', as: 'rails_admin'
   get "static_pages/PastEvent"
   root to: 'static_pages#trainingcenter'

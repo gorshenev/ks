@@ -8,7 +8,7 @@ html, body {
 }
 body {
 	color: #344644;
-	background: #E8EBF2;
+	background: #ffffff;
 }
 h1, h2, h3, h4, h5, h6 {	
     font-family: 'Open Sans', 'Titillium Web', Geneva, sans-serif;
@@ -736,7 +736,7 @@ blockquote.pull-right:before {
 	padding: 0;
 	z-index: 100;
 	position: absolute;
-	background: #E8EBF2;
+	background: #ffffff;
 	width: 220px;
 	border-right: 1px solid #DCE1E4;
 }
@@ -1007,7 +1007,7 @@ blockquote.pull-right:before {
 
 
 #content-wrapper {
-	background: #e7ebee;
+	background: #ffffff;
 	height: 100%;
 	margin-top: 0;
 	margin-bottom: 0;
